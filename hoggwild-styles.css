@@ -1,0 +1,129 @@
+* {
+/*	border: 1px solid blue;*/
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	color: black;
+}
+
+.clearfix:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/* text stuff */
+
+p {
+	margin:0 8px;
+}
+
+h1 {
+	font-family:'Ceviche One';
+	color:red;
+	font-size:28px;
+	}
+
+#header, #intro {
+	line-height: 1.5;
+}
+
+#header p {
+	text-align:center;
+	
+	}
+
+#header span {
+	font-family: 'Ceviche One', cursive;
+	font-size: 30px;
+	color:red;
+}
+
+#intro strong{
+	color:red;
+	font-family:'Ceviche One', cursive;
+	font-size:24px;
+}
+
+#intro {
+	font-size:16px;
+	margin:5px;
+}
+
+#intro p {
+	margin:0 auto;
+}
+
+#tagline {
+	font-size:16px;
+}
+
+/* image stuff */
+
+img {
+	display: block;
+}
+	
+#logo {
+	max-width: 200px;
+	margin:16px auto;
+}
+
+#red-cross-logo {
+	margin:16px auto;
+}
+
+#profile-pic {
+	
+	max-width: 250px;
+	border: 1px;
+	border-radius: 100%;
+	margin:16px auto;
+}
+
+/* responsive stuff */	
+
+@media (min-width:610px) {
+	div#header p {
+
+		text-align: left;
+	
+	}
+	div#intro p {
+		margin: 16px;
+	}
+		
+	#logo {
+		float: left;
+		margin:16px;
+	}
+	
+	#profile-pic {
+		float: right;
+		margin:16px;
+	}
+	
+		
+}
+
+@media (min-width:751px) {
+	
+	div#header p {
+		float:left;
+		min-width:275px;
+		margin-top: 100px;
+	}
+	#red-cross-logo {
+		clear:none;
+		float:left;
+		margin-top:100px;
+		margin-left:16px;
+	}
+}
