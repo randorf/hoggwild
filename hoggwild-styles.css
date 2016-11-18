@@ -1,3 +1,5 @@
+/* whole page stuff */
+
 * {
 	border: 1px solid blue;
 	margin: 0;
@@ -21,14 +23,13 @@ body {
 /* text stuff */
 
 p {
-	margin:0 16px;
+	margin:16px;
 }
 
 h1 {
-	font-family:'Ceviche One';
+	font-family:'Ceviche One', cursive;
 	color:red;
 	font-size:28px;
-	margin:16px;
 	line-height:1;
 	}
 
@@ -53,26 +54,18 @@ h1 {
 	font-size:24px;
 }
 
-#tagline {
+#header em {
 	font-size:16px;
 }
 
 .course-list {
 	text-align:center;
 	line-height:2;
+	padding:16px;
 }
 
 .course-list img {
 	margin:16px auto;
-}
-
-#red-cross-classes h1 {
-	margin:16px 16px 8px;
-}
-
-#red-cross-classes em {
-	display:inline-block;
-	margin-bottom:16px;
 }
 
 /* image stuff */
@@ -101,18 +94,22 @@ img {
 
 /* responsive stuff */	
 
-@media (min-width:610px) {
-	#header-text {
-
-		text-align: left;
-	
-	}
-	div#intro p {
-		margin: 16px;
-	}
-		
+@media (min-width:615px) {
 	#logo {
 		float: left;
+		margin:16px;
+	}
+	
+	#header-text {
+		float:left;
+		width:275px;
+		text-align: left;
+		margin-top:16px;
+	}
+	
+	#red-cross-logo {
+		clear:none;
+		float:right;
 		margin:16px;
 	}
 	
@@ -121,20 +118,19 @@ img {
 		margin:16px;
 	}
 	
+	#intro p {
+		margin: 16px;
+	}
 		
 }
 
-@media (min-width:751px) {
+@media (min-width:770px) {
 	
 	#header-text {
-		float:left;
-		min-width:275px;
-		margin-top: 100px;
+		margin-top: 140px;
 	}
+	
 	#red-cross-logo {
-		clear:none;
-		float:left;
-		margin-top:100px;
-		margin-left:16px;
+		margin-top: 111px;
 	}
 }
